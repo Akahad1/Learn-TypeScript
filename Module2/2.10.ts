@@ -10,6 +10,9 @@ type areaString<T> ={
     [key in keyof T]:T[key]
 }
 
-type res1 =areaString<{width:number; hight:string}>
+const res1:areaString<{width:number; hight:string}> ={
+    width:100,
+    hight:'23'
+}
 
 }
